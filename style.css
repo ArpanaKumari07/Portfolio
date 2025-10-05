@@ -210,11 +210,6 @@ h1 .name{
   transform:translateY(-4px);
   box-shadow:0 18px 40px rgba(0,198,255,0.06)
 }
-.btn-ghost{
-  color:var(--muted);
-  background:transparent;
-  border:1px dashed rgba(255,255,255,0.03)
-}
 
 /* social row */
 .social-row{
@@ -549,4 +544,5 @@ h1 .name{
   .projects-grid{grid-template-columns:1fr}
   .about-grid{grid-template-columns:1fr}
 }
+
 
