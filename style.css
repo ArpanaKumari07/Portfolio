@@ -182,7 +182,7 @@ h1 .name{
   width:0;
   animation:typing 6s steps(50,end) infinite alternate, blink 2s step-end infinite;
 }
-@keyframes typing{from{width:0}to{width:33ch}}
+@keyframes typing{from{width:0}to{width:34ch}}
 @keyframes blink{50%{border-color:transparent}}
 
 .lead{color:var(--muted);margin-top:10px}
@@ -544,6 +544,7 @@ h1 .name{
   .projects-grid{grid-template-columns:1fr}
   .about-grid{grid-template-columns:1fr}
 }
+
 
 
 
