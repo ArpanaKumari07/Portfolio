@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Arpana Kumari — Portfolio</title>
+    <!--Favicon-->
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <title>My Portfolio</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Montserrat:wght@300;500;700&display=swap">
+
+
+    <!-- script (deferred) -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="Arpana Kumari home">
+                <div class="brand-logo">AK</div>
+                <div class="brand-text">
+                    <strong>Arpana Kumari</strong>
+                    <small>Scaler School of Technology · 1st year</small>
+                </div>
+            </a>
+
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <button class="hamburger" id="hamburgerBtn" aria-expanded="false" aria-controls="navLinks"
+                    aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="container hero-inner">
+
+                <!-- TEXT -->
+                <div class="hero-left">
+                    <div class="kicker">/ &nbsp; Hello</div>
+                    <h1 id="hero-heading"> I'm <span class="name">Arpana Kumari</span></h1>
+
+                    <!-- typing (CSS-only) -->
+                    <div class="typing-wrap" aria-hidden="false">
+                        <audio id="portfolioAudio">
+                            <source src="/keyboardsound.mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+
+                        <div class="typing-text"> Learner · Developer · Adventurer · Biker at Heart </div>
+                    </div>
+
+
+                    <p class="lead">I am a tech enthusiast with a passion for coding and exploring diverse programming
+                        languages. I aspire to build a startup when the right idea strikes and am always ready to
+                        embrace risks and challenges along the way.</p>
+
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="#" download="ArpanaKumari_Resume.pdf">Download Resume</a>
+                        <a class="btn btn-ghost" href="#projects">View Projects</a>
+                    </div>
+
+                    <div class="social-row" aria-label="Social links">
+                        <a class="social" href="https://www.linkedin.com/in/arpana-kumari-53b654361/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <!-- LinkedIn -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h4.9V24H0V8.5zM8.5 8.5h4.7v2.08h.07c.65-1.24 2.24-2.55 4.62-2.55C23.12 8.03 24 11.03 24 14.67V24h-4.9v-8.13c0-1.94-.03-4.43-2.7-4.43-2.7 0-3.11 2.11-3.11 4.29V24H8.5V8.5z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+
+                        <a class="social" href="https://www.instagram.com/karn_arpana240/?next=%2F" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <!-- Instagram (simple) -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" />
+                                <circle cx="12" cy="12" r="3.2" fill="currentColor"></circle>
+                                <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor"></circle>
+                            </svg>
+                        </a>
+
+                        <a class="social" href="https://x.com/kkarnarpana" target="_blank" rel="noopener noreferrer"
+                            aria-label="X (Twitter)">
+                            <!-- X icon -->
+                            <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 5l14 14"></path>
+                                <path d="M19 5L5 19"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VISUALS: PROFILE + LAPTOP -->
+                <div class="hero-right" aria-hidden="false">
+                    <div class="profile-wrap">
+                        <img class="profile-img" alt="Profile placeholder" src="/image.png"
+                            xmlns='http://www.w3.org/2000/svg' width='400' height='400'>
+                        <rect width='100%' height='100%' fill='%23101014' /><text x='50%' y='50%' fill='%239aa0b2'
+                            font-family='Montserrat' font-size='28' dominant-baseline='middle'
+                            text-anchor='middle'>ARPANA</text></svg>
+                        <div class="profile-frame">
+                            <div class="frame-rider" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="laptop" role="img" aria-label="Animated code laptop">
+                        <div class="screen">
+                            <pre>
+&lt;!-- sample code --&gt;
+function greet() {
+  console.log("Hello, world!");
+}
+for (let i=0; i &lt; 5; i++) {
+  greet();
+}
+              </pre>
+
+                            <pre class="duplicate">
+&lt;!-- sample code --&gt;
+function greet() {
+  console.log("Hello, world!");
+}
+for (let i=0; i &lt; 5; i++) {
+  greet();
+}
+              </pre>
+                        </div>
+                        <div class="keyboard" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- angled decorative divider -->
+            <div class="angled-divider" aria-hidden="true"></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-lead">I’m a first-year undergraduate at Scaler School of Technology. Passionate about
+                    coding, technology and adventure. I enjoy crafting UI, exploring CSS tricks, and going on long
+                    rides.</p>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Interests</h3>
+                        <p>Coding & Programming Languages · Game Development · Data Science / AI / ML · Fitness ·
+                            motorcycles · route planning</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Education</h3>
+                        <p>· Scaler School of Technology — 1st Year.<br>· Fr.Agnel School — 12th(PCM).<br>· St.Columbus
+                            School — 10th. </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Tools</h3>
+                        <p>VSCode · Git · Linux · MySQL · Terminal · HTML · CSS · Java Script · Java · Python</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+
+        <div class="skills-grid">
+            <div class="skill-item">
+                <span class="skill-icon">💻</span>
+                <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon">🎨</span>
+                <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon">⚡</span>
+                <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon">🐍</span>
+                <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon">☕</span>
+                <span class="skill-name">Java</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon">🔧</span>
+                <span class="skill-name">Git</span>
+            </div>
+        </div>
+        </section>
+
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="proj-thumb" aria-hidden="true"><img src="/LastBoatStanding.jpg" width="350px"
+                                height="120px"></div>
+                        <h3>Last Boat Standing</h3>
+                        <p>Last Boat Standing is a 2D top-down survival game. Control a boy on a boat, rescue floating
+                            people (max 3 per trip), avoid hazards, and reach the rescue station before the 1-minute
+                            timer ends.</p>
+                        <div class="proj-meta"><span class="badge">HTML</span><span class="badge">CSS</span><span
+                                class="badge">JavaScript</span></div>
+                        <div class="proj-actions">
+                            <a class="btn small" href="https://github.com/srujanasawant/Last-Boat-Standing"
+                                target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="btn outline small" href="https://arpanakumari.itch.io/last-boat-standing"
+                                target="_blank" rel="noopener noreferrer">Live</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="proj-thumb" aria-hidden="true"></div>
+                        <h3>Hand Gesture Controlled Game</h3>
+                        <p>It is a python base code that contols a simple game like Hill Clim using hand gestures.</p>
+                        <div class="proj-meta"><span class="badge">Python</span><span class="badge">Libraries</span>
+                        </div>
+                        <div class="proj-actions">
+                            <a class="btn small" href="#" target="_blank" rel="noopener noreferrer">Github</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="proj-thumb" aria-hidden="true"></div>
+                        <h3>Calculator</h3>
+                        <p>A Java-based calculator that performs basic arithmetic operations .</p>
+                        <div class="proj-meta"><span class="badge">Java</span></div>
+                        <div class="proj-actions">
+                            <a class="btn small" href="https://github.com/ArpanaKumari07" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p><strong>Email</strong><br><a href="mailto:kkarnarpana@gmail.com">kkarnarpana@gmail.com</a>
+                        </p>
+                        <p><strong>GitHub</strong><br><a href="https://github.com/ArpanaKumari07" target="_blank"
+                                rel="noopener noreferrer">github.com/ArpanaKumari07</a></p>
+
+                        <div class="social-row" aria-label="Social links">
+                            <a class="social" href="https://www.linkedin.com/in/arpana-kumari-53b654361/"target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <!-- LinkedIn -->
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h4.9V24H0V8.5zM8.5 8.5h4.7v2.08h.07c.65-1.24 2.24-2.55 4.62-2.55C23.12 8.03 24 11.03 24 14.67V24h-4.9v-8.13c0-1.94-.03-4.43-2.7-4.43-2.7 0-3.11 2.11-3.11 4.29V24H8.5V8.5z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+
+                            <a class="social" href="https://www.instagram.com/karn_arpana240/?next=%2F" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <!-- Instagram (simple) -->
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none"
+                                        stroke="currentColor" stroke-width="1.6" />
+                                    <circle cx="12" cy="12" r="3.2" fill="currentColor"></circle>
+                                    <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor"></circle>
+                                </svg>
+                            </a>
+
+                            <a class="social" href="https://x.com/kkarnarpana" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <!-- X icon -->
+                                <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 5l14 14"></path>
+                                    <path d="M19 5L5 19"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <label class="form-row">
+                            <input type="text" name="name" required placeholder=" ">
+                            <span class="floating-label">Full name</span>
+                        </label>
+
+                        <label class="form-row">
+                            <input type="email" name="email" required placeholder=" ">
+                            <span class="floating-label">Email</span>
+                        </label>
+
+                        <label class="form-row">
+                            <textarea name="message" rows="5" placeholder=" " required></textarea>
+                            <span class="floating-label">Message</span>
+                        </label>
+
+                        <div class="form-actions">
+                            <button class="btn btn-primary" type="submit">Send Message</button>
+                            <button class="btn outline" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2025 Arpana Kumari · Crafted with HTML &amp; CSS</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
